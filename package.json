@@ -1,0 +1,41 @@
+{
+  "name": "natsu",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NATSU Cross-Platform Voice AI (Web + Mobile + Desktop)",
+  "main": "dist/electron/main.js",
+  "type": "module",
+  "scripts": {
+    "dev:web": "vite",
+    "dev:electron": "electron .",
+    "build:web": "tsc && vite build",
+    "build:mobile": "tsc && vite build && cap sync",
+    "build:desktop": "tsc && vite build && electron-builder",
+    "build:all": "tsc && vite build && cap sync && electron-builder",
+    "preview": "vite preview",
+    "serve:web": "npm run build:web && vite preview",
+    "cap:add:ios": "cap add ios",
+    "cap:add:android": "cap add android",
+    "cap:open:ios": "cap open ios",
+    "cap:open:android": "cap open android",
+    "cap:sync": "cap sync"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@capacitor/core": "^7.0.0",
+    "@supabase/supabase-js": "^2.40.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "electron": "^34.0.0",
+    "electron-builder": "^25.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@types/electron": "^34.0.0"
+  }
+}
