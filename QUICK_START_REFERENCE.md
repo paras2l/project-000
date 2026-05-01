@@ -37,10 +37,19 @@ torch.onnx.export(model, dummy_input, 'kokoro.onnx',
 print("✓ Done! Check for kokoro.onnx (30-40 MB)")
 ```
 
-**Run it:**
+**Run it (important - read below):**
+
+**Option A: PowerShell (if you see "PS" in terminal):**
 ```bash
 python convert_kokoro.py
 ```
+
+**Option B: Command Prompt (if you see "C:\" in terminal):**
+```bash
+python convert_kokoro.py
+```
+
+**Both use the same command!** 🎯
 
 **Wait 5-10 minutes...** Then you'll have `kokoro.onnx` file ✅
 

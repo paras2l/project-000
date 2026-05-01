@@ -156,16 +156,28 @@ print("=" * 60)
 1. **Go to Desktop** (click Desktop icon on left side of screen)
 2. **Right-click on empty space** (not on any file)
 3. **Click "Open in Terminal"** or **"Open Command Prompt here"**
-4. **Black window opens** ← This is Command Prompt
+4. **Black/Blue window opens** ← This is Command Prompt or PowerShell
+
+**IMPORTANT: If you see "PS" at the start, you have PowerShell. If you see "C:\", you have Command Prompt.**
 
 ### **Part 3B: Run the Script**
 
-1. **In the black Command Prompt window, type:**
+**IF YOU SEE "PS" (PowerShell):**
 ```
 python convert_kokoro.py
 ```
 
-2. **Press Enter**
+**IF YOU SEE "C:\" (Command Prompt):**
+```
+python convert_kokoro.py
+```
+
+**Either way, just type this and press Enter:**
+```
+python convert_kokoro.py
+```
+
+Then **Press Enter**
 
 3. **Wait...** It will show:
 ```
@@ -405,13 +417,23 @@ VITE v5.0.0  ready in 234 ms
 
 # **Troubleshooting: What to Do If Something Goes Wrong**
 
-### **Issue: "Python not found"**
+### **Issue: "convert_kokoro.py : The term 'convert_kokoro.py' is not recognized"**
 
 **Solution:**
-1. Go back to Step 1
-2. Make sure you checked "Add Python to PATH" during install
-3. Restart computer
-4. Try again
+This happens when you use **PowerShell** (new terminal) instead of **Command Prompt** (old terminal)
+
+**Fix:**
+```
+Instead of: convert_kokoro.py
+Type: python convert_kokoro.py
+```
+
+Or use the other method:
+```
+.\convert_kokoro.py
+```
+
+**Easiest: Just use `python convert_kokoro.py` - it works in both!**
 
 ### **Issue: Conversion script fails**
 
