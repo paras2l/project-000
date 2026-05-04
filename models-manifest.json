@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "releaseDate": "2026-05-04",
+  "models": [
+    {
+      "name": "kokoro-tts",
+      "type": "voice",
+      "format": "onnx",
+      "size": 377487360,
+      "url": "https://github.com/paras2l/natsu-models/releases/download/v1.0/kokoro.onnx",
+      "checksum": "sha256:large-model",
+      "compatibility": ["web", "mobile", "desktop"],
+      "description": "Kokoro TTS 360MB full model for unlimited voice generation with high quality"
+    }
+  ]
+}
